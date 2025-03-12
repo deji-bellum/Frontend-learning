@@ -16,7 +16,7 @@ first.toUppercase();
 myName.slice(1,6);
 alert('Hello' + "First")
 
-/*This code is to the life in weeks challenge and it is to showcase functions - parameters and arguments*/
+/*This code is for the life in weeks challenge and it is to showcase functions - parameters and arguments*/
 function lifeInWeeks(age){
 
     var yearsRemaining = 90 - age;
@@ -28,3 +28,13 @@ function lifeInWeeks(age){
     }
     
     lifeInWeeks(23);
+
+    /*This code is for the BMI calculator and it is to showcase functions - outputs and return values*/
+    function bmiCalculator(weight, height){
+        var bmiHeight = height * height;
+        var bmi = weight /bmiHeight;
+        bmi=Math.floor(bmi)
+        console.log ("Your BMI is " + bmi )
+       
+      }
+      bmiCalculator(80, 1.8)
