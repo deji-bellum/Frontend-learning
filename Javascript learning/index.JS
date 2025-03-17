@@ -111,3 +111,34 @@ function lifeInWeeks(age){
        
       }
       bmiCalculator(80, 1.8)
+
+/*IF-ELSE STATEMENTS*/
+
+/*Example 1*/
+    let number = 7;
+    if (number % 2 === 0) {
+        console.log(`${number} is an even number.`);
+    } else {
+        console.log(`${number} is an odd number.`);
+    }
+    // Output: 7 is an odd number.
+
+/*Example 2*/
+    let enteredPassword = "admin123";
+    let correctPassword = "admin123";
+
+    if (enteredPassword === correctPassword) {
+        console.log("Login successful!");
+    } else {
+        console.log("Incorrect password. Please try again.");
+    }
+    // Output: Login successful!
+
+/*COMPARATORS*/
+/*== vs ===*/
+    console.log(5 == "5");   // true (values are the same)
+    console.log(5 === "5");  // false (different data types)
+
+/*!== vs !===*/
+    console.log(10 != "10");   // false (values are the same)
+    console.log(10 !== "10");  // true (different data types)

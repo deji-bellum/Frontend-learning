@@ -54,3 +54,33 @@ console.log(greet("Alice"));
   Parameters: Inputs specified in the function definition.
   Arguments: Values passed when calling the function.
   Return Value: The result a function provides back to the caller.
+
+# Comparators (Comparison Operators)
+Comparators are used to compare two values. They return either true or false.
+
+  ### Comparison Operators 
+  == means equal to (loose comparison). Example	5 == "5" gives an output of true
+  ===	means strictly equal (type + value). Eample	5 === "5" gives an output of	false
+  !=	means not equal.  Example 5 != "6" gives an output of true
+  !==	means strictly not equal. Example 5 !== "5" gives an output of true
+  >	means greater than. Example 10 > 5 gives an output of	true
+  <	means less than. Example	3 < 5 gives an output of	true
+  >= means greater than or equal to	. Example 5 >= 5 gives an output of true
+  <= means less than or equal to. Example	4 <= 5 gives an output of	true
+
+  ### Key Differences Between == and ===
+  == only checks value equality (loose comparison).
+  === checks both value and data type (strict comparison).
+  Example:
+  console.log(5 == "5");   // true (values are the same)
+  console.log(5 === "5");  // false (type is different)
+
+  ### Logical Operators
+  Logical operators are used to combine multiple conditions.
+
+  && means AND (All conditions true). Example true && true gives an otput of	true
+  `	means OR (At least one true)
+  !	means NOT (Reverses condition). Example !true gives an output of false
+
+
+
