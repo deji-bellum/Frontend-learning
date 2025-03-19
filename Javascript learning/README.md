@@ -82,5 +82,20 @@ Comparators are used to compare two values. They return either true or false.
   `	means OR (At least one true)
   !	means NOT (Reverses condition). Example !true gives an output of false
 
+# While loops
+The while loop is a control flow statement that allows code to be executed repeatedly as long as the specified condition is true.
 
+  ### Key Characteristics of a While Loop:
+  1. The condition is evaluated before the code block runs.
+  2. If the condition is false at the start, the code block will not run at all.
+  3. Suitable when the number of iterations is unknown beforehand.
 
+# For Loop
+The for loop is ideal when you know the exact number of iterations you want.
+
+  ## Key Characteristics of a For Loop:
+  The loop structure includes three parts:
+  1. Initialization: Sets the starting value.
+  2. Condition: The loop runs while this condition is true.
+  3. Increment/Decrement: Updates the loop control variable.
+  The loop's condition is checked before each iteration.

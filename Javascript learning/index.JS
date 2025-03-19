@@ -142,3 +142,32 @@ function lifeInWeeks(age){
 /*!== vs !===*/
     console.log(10 != "10");   // false (values are the same)
     console.log(10 !== "10");  // true (different data types)
+
+/*WHILE LOOPS*/
+
+/*Example 1*/
+var count = 1;
+while (count <= 5) {
+    console.log(`Count: ${count}`);
+    count++; 
+}
+
+
+/*Example 2*/
+var password = "secure123";
+var userInput = "";
+
+while (userInput !== password) {
+    userInput = prompt("Enter the password:");
+}
+
+console.log("Access granted!");
+
+/*FOR LOOPS*/
+
+var sum = 0;
+
+for (let i = 1; i <= 5; i++) {
+    sum += i; // Accumulates the total
+}
+console.log(`Sum: ${sum}`);
