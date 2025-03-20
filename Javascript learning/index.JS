@@ -171,3 +171,110 @@ for (let i = 1; i <= 5; i++) {
     sum += i; // Accumulates the total
 }
 console.log(`Sum: ${sum}`);
+
+/*ADDING JAVASCRIPT TO HTML */
+/*Inline Javascript*/
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline JavaScript Example</title>
+</head>
+<body>
+    <h1>Inline JavaScript Example</h1>
+    <button onclick="alert('Button clicked!')">Click Me</button>
+</body>
+</html>
+
+/*Internal Javascript*/
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal JavaScript Example</title>
+    <script>
+        function greet() {
+            alert("Welcome to my website!");
+        }
+    </script>
+</head>
+<body>
+    <h1>Internal JavaScript Example</h1>
+    <button onclick="greet()">Click Me</button>
+</body>
+</html>
+
+/*External Javascript*/
+<!DOCTYPE html>
+<html>
+<head>
+    <title>External JavaScript Example</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>External JavaScript Example</h1>
+    <button onclick="showMessage()">Click Me</button>
+</body>
+</html>
+
+/*DOCUMENT OBJECT MODEL*/
+Document
+ └── html
+     ├── head
+     │   └── title
+     └── body
+         ├── h1#title
+         ├── p.description
+         └── button#btn
+
+/*SELECTING HTML ELEMENTS WITH JAVASCRIPT*/
+/*Using getElementById()*/
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selecting Elements Example</title>
+</head>
+<body>
+    <h1 id="header">Hello World!</h1>
+    <script>
+        const header = document.getElementById("header");
+        console.log(header); // Logs: <h1 id="header">Hello World!</h1>
+    </script>
+</body>
+</html>
+
+/*Using querySelector()*/
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query Selector Example</title>
+</head>
+<body>
+    <p class="text">First paragraph</p>
+    <p class="text">Second paragraph</p>
+    <script>
+        const firstParagraph = document.querySelector(".text");
+        console.log(firstParagraph.textContent); // Logs: "First paragraph"
+    </script>
+</body>
+</html>
+
+/*Using querySelectorAll()*/
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query Selector All Example</title>
+</head>
+<body>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
+    <script>
+        const listItems = document.querySelectorAll("li");
+        listItems.forEach(item => console.log(item.textContent));
+        // Output: Apple, Banana, Cherry
+    </script>
+</body>
+</html>
+
+

@@ -99,3 +99,40 @@ The for loop is ideal when you know the exact number of iterations you want.
   2. Condition: The loop runs while this condition is true.
   3. Increment/Decrement: Updates the loop control variable.
   The loop's condition is checked before each iteration.
+
+# Adding JavaScript to HTML
+JavaScript can be added to an HTML file in three main ways:
+
+1. Inline JavaScript: In this method, JavaScript code is directly placed inside an HTML tag using the onclick, onmouseover, or other event attributes. This method is generally not recommended for larger projects because it mixes HTML and JavaScript.
+
+2. Internal JavaScript (Inside <script> tag in the HTML file): Internal JavaScript is added inside a <script> tag in the <head> or <body> section of the HTML file. It's useful for small to medium-sized scripts.
+
+3. External JavaScript File: For better organization and scalability, JavaScript is often written in a separate .js file and linked to the HTML file.
+
+# Document Object Model (DOM)
+The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML document as a tree of objects.
+
+  ### Key Concepts in the DOM:
+  1. Document: The root object that gives access to the entire HTML document.
+  2. Nodes: Every HTML element, attribute, and text is represented as a node.
+  3. Tree Structure: The DOM organizes these nodes in a tree-like hierarchy.
+
+# Selecting HTML Elements with JavaScript
+JavaScript provides various methods to select HTML elements using the DOM.
+
+1. Using getElementById()
+The getElementById() method selects an element by its ID.
+
+2. Using querySelector()
+The querySelector() method selects the first element that matches a given CSS selector.
+
+3. Using querySelectorAll()
+The querySelectorAll() method selects all elements that match a given CSS selector and returns a NodeList.
+
+# Manipulating HTML Elements with JavaScript
+
+1. Changing Text Content
+The .textContent property changes the text inside an element.
+
+2. Modifying CSS Styles
+The .style property allows you to modify an element’s CSS.
