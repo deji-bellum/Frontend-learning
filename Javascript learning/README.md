@@ -136,3 +136,27 @@ The .textContent property changes the text inside an element.
 
 2. Modifying CSS Styles
 The .style property allows you to modify an element’s CSS.
+
+# Adding an Event Listener to a Button
+An event listener is a method that listens for specific user actions like clicks, keypresses, or mouse movements. Using the .addEventListener() method is the preferred way to handle events in JavaScript.
+
+### Syntax 
+element.addEventListener(event, callbackFunction);
+
+
+### Why Use .addEventListener() Instead of Inline Events?
+1. More flexible — you can attach multiple listeners to the same element.
+2. Helps keep HTML and JavaScript separate (cleaner code).
+3. Allows you to dynamically add or remove event listeners.
+
+# Higher-Order Functions
+A higher-order function is a function that either:
+A. Takes another function as an argument
+B. Returns a function as its output
+Higher-order functions are a powerful feature in JavaScript that make code more concise, reusable, and modular.
+
+### Common Examples of Higher-Order Functions
+1. forEach() — Iterates over an array.
+2. map() — Transforms array elements.
+3. filter() — Filters elements based on a condition.
+4. reduce() — Reduces an array to a single value.

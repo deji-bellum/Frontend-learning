@@ -277,4 +277,21 @@ Document
 </body>
 </html>
 
+/*ADDING AN EVENT LISTENER TO A BUTTON*?
+/* Adding a click event listener*/
+button.addEventListener("click", function() {
+ message.textContent = "Button clicked!";
 
+
+/*Higher Order Function*?
+/* Passing Functions as Arguments*/
+function greetUser(name) {
+    console.log(`Hello, ${name}!`);
+}
+
+function processUserInput(callback) {
+    const name = prompt("Please enter your name:");
+    callback(name);
+}
+
+processUserInput(greetUser);
