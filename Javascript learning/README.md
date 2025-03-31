@@ -160,3 +160,56 @@ Higher-order functions are a powerful feature in JavaScript that make code more 
 2. map() — Transforms array elements.
 3. filter() — Filters elements based on a condition.
 4. reduce() — Reduces an array to a single value.
+
+# Javascript objects
+An object in JavaScript is a collection of key-value pairs. Objects allow you to store related data and functions together.
+
+There are two ways to create an object:
+
+1. Object Literal Syntax
+  const person = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 30,
+      greet: function() {
+          console.log(`Hello, my name is ${this.firstName} ${this.lastName}.`);
+      }
+  };
+
+2. Using the new Object() Syntax
+  const car = new Object();
+  car.brand = "Toyota";
+  car.model = "Camry";
+  car.year = 2022;
+
+# Switch Statements
+The switch statement is used to perform different actions based on different conditions. It's useful when you need to compare one value to multiple possible cases.
+
+### Syntax
+switch (expression) {
+    case value1:
+        // Code to execute
+        break;
+    case value2:
+        // Code to execute
+        break;
+    default:
+        // Code to execute if no case matches
+}
+
+# Keyboard Event Listeners
+Keyboard events are triggered when a user presses a key on their keyboard. 
+Common keyboard events include:
+
+1. keydown — Fires when a key is pressed down.
+
+2. keyup — Fires when a key is released.
+
+3. keypress — Fires when a key producing a character is pressed.
+
+# Callbacks
+A callback function is a function that is passed as an argument to another function and is executed later.
+
+### Why Use Callbacks?
+1. To ensure certain code runs only after another code finishes.
+2. Commonly used for asynchronous operations

@@ -277,13 +277,13 @@ Document
 </body>
 </html>
 
-/*ADDING AN EVENT LISTENER TO A BUTTON*?
+/*ADDING AN EVENT LISTENER TO A BUTTON*/
 /* Adding a click event listener*/
 button.addEventListener("click", function() {
  message.textContent = "Button clicked!";
 
 
-/*Higher Order Function*?
+/*HIGHER ORDER FUNCTION*/
 /* Passing Functions as Arguments*/
 function greetUser(name) {
     console.log(`Hello, ${name}!`);
@@ -295,3 +295,105 @@ function processUserInput(callback) {
 }
 
 processUserInput(greetUser);
+
+/*Javascript Objects*/
+/*Object with methods*/
+const calculator = {
+    add: function(a, b) {
+        return a + b;
+    },
+    subtract: function(a, b) {
+        return a - b;
+    }
+};
+
+console.log(calculator.add(5, 3));      // Output: 8
+console.log(calculator.subtract(10, 4)); // Output: 6
+
+/*Nested Objects*/
+const student = {
+    name: "Alice",
+    subjects: {
+        math: 90,
+        english: 85
+    }
+};
+
+console.log(student.subjects.math); // Output: 90
+
+/*SWITCH STATEMENTS*/
+/*Simple switch statements*/
+const day = "Monday";
+
+switch (day) {
+    case "Monday":
+        console.log("Start of the workweek!");
+        break;
+    case "Friday":
+        console.log("Weekend is near!");
+        break;
+    default:
+        console.log("It's a regular day.");
+}
+
+/*Using switch with numbers*/
+const grade = 90;
+
+switch (true) {
+    case grade >= 90:
+        console.log("A Grade");
+        break;
+    case grade >= 80:
+        console.log("B Grade");
+        break;
+    default:
+        console.log("Work harder!");
+}
+
+/*Multiple cases with the same outcome*/
+const fruit = "apple";
+
+switch (fruit) {
+    case "apple":
+    case "banana":
+        console.log("This is a common fruit.");
+        break;
+    case "kiwi":
+        console.log("Exotic fruit!");
+        break;
+    default:
+        console.log("Unknown fruit.");
+}
+
+/*KEYBOARD EVENT LISTENERS*/
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keyboard Event Example</title>
+</head>
+<body>
+    <input type="text" id="inputBox" placeholder="Type something..." />
+    <p id="output"></p>
+
+    <script>
+        const inputBox = document.getElementById("inputBox");
+        const output = document.getElementById("output");
+
+        inputBox.addEventListener("keydown", function(event) {
+            output.textContent = `You pressed: ${event.key}`;
+        });
+    </script>
+</body>
+</html>
+
+/*CALLBACKS*/
+function greet(name, callback) {
+    console.log(`Hello, ${name}!`);
+    callback();
+}
+
+function goodbye() {
+    console.log("Goodbye!");
+}
+
+greet("John", goodbye);
