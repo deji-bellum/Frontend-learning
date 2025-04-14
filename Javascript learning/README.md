@@ -181,7 +181,7 @@ There are two ways to create an object:
   car.brand = "Toyota";
   car.model = "Camry";
   car.year = 2022;
-
+x
 # Switch Statements
 The switch statement is used to perform different actions based on different conditions. It's useful when you need to compare one value to multiple possible cases.
 
@@ -213,3 +213,5 @@ A callback function is a function that is passed as an argument to another funct
 ### Why Use Callbacks?
 1. To ensure certain code runs only after another code finishes.
 2. Commonly used for asynchronous operations
+
+
