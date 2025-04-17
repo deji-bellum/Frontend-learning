@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,9 +17,12 @@
             <div style="left: 605px; top: 38px; position: absolute; color: #4F2E65; font-size: 16px; font-family: Poppins; font-weight: 600; text-transform: capitalize; letter-spacing: 0.16px; word-wrap: break-word">features</div>
             <div style="left: 706px; top: 38px; position: absolute; color: #4F2E65; font-size: 16px; font-family: Poppins; font-weight: 600; text-transform: capitalize; letter-spacing: 0.16px; word-wrap: break-word">Resources</div>
             <div style="left: 818px; top: 38px; position: absolute; color: #4F2E65; font-size: 16px; font-family: Poppins; font-weight: 600; text-transform: capitalize; letter-spacing: 0.16px; word-wrap: break-word">contact Us</div>
-            <div data-roundness="0px" data-show-leading-icon="false" data-show-trailing-icon="false" data-size="Regular" data-state="Default" data-type="Primary" style="padding-left: 16px; padding-right: 16px; padding-top: 12px; padding-bottom: 12px; left: 1204px; top: 27.50px; position: absolute; background: #2D033B; border-radius: 5px; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
-                <div style="color: white; font-size: 16px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Report a case</div>
-            </div>
+        
+            <button id="reportButton">
+                Report a case
+            </button>
+  
+
             <div style="left: 1051px; top: 38px; position: absolute; text-align: center"><span style="color: black; font-size: 16px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Member? </span><span style="color: #810CA8; font-size: 16px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Log in</span></div>
             <div style="width: 121.10px; height: 50px; left: 93px; top: 25px; position: absolute">
                 <div style="width: 20.40px; height: 34.73px; left: 100.69px; top: 6.60px; position: absolute; background: #2D033B"></div>
@@ -26,9 +30,12 @@
             </div>
         </div>
         <div style="width: 1118px; left: 161px; top: 502.50px; position: absolute; text-align: center; color: white; font-size: 36px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Breaking Barriers, Building Community, Ending GBV.</div>
-        <div style="height: 60px; padding-left: 60px; padding-right: 60px; padding-top: 30px; padding-bottom: 30px; left: 576.50px; top: 606.50px; position: absolute; background: #BC7FCD; border-radius: 5px; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
-            <div style="text-align: center; color: white; font-size: 24px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Report a case</div>
-        </div>
+        <div id="bigReportACase" class="button-div">
+            <div style="text-align: center; color: white; font-size: 24px; font-family: Poppins; font-weight: 500; word-wrap: break-word;">
+              Report a case
+            </div>
+          </div>
+          
         <div style="width: 411.73px; height: 170px; left: 514px; top: 307px; position: absolute">
             <div style="width: 69.37px; height: 118.08px; left: 342.36px; top: 22.43px; position: absolute; background: #FEFCFF"></div>
             <div style="left: 7.09px; top: 0px; position: absolute; text-align: center; color: #FEFCFF; font-size: 113.33px; font-family: Poppins; font-weight: 400; word-wrap: break-word">Liber-</div>
@@ -97,7 +104,7 @@
                 </div>
             </div>
             <div style="padding: 10px; left: 168px; top: 270px; position: absolute; border-radius: 5px; outline: 2px #290336 solid; outline-offset: -2px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-                <img style="width: 560px; height: 516px; border-radius: 5px" src="Pictures/Why Liber8 jpeg.png" />
+                <img  class="fade-image" id= slideshow style="width: 560px; height: 516px; border-radius: 5px" src="Pictures/Why Liber8 jpeg.png" />
             </div>
             <div style="height: 69px; padding-left: 60px; padding-right: 60px; padding-top: 25px; padding-bottom: 25px; left: 848px; top: 746px; position: absolute; background: #4D0E64; border-radius: 5px; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
                 <div style="color: white; font-size: 24px; font-family: Poppins; font-weight: 500; word-wrap: break-word">Get started</div>
@@ -162,5 +169,6 @@
             </div>
         </div>
     </div>
+    <script src="index.js"></script> 
 </body>
 </html>

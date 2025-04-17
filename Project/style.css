@@ -12,4 +12,77 @@ html, body {
     overflow-y: auto;
     max-height: 100vh;
   }
-  
+ /* CSS: Place in your style.css or inside a <style> tag in <head> */
+#reportButton {
+  padding: 12px 16px;
+  position: absolute;
+  left: 1204px;
+  top: 27.5px;
+  background-color: #2D033B;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#reportButton:hover {
+  background-color: #4C0070;
+}
+
+.modal {
+  display: none; /* hidden by default */
+  position: absolute;
+  top: 60px; /* will appear below the button */
+  left: 0;
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 250px;
+}
+
+.modal-content h3 {
+  margin: 0 0 10px 0;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  color: #2D033B;
+}
+
+.button-div {
+  height: 60px;
+  padding: 30px 60px;
+  position: absolute;
+  left: 576.5px;
+  top: 606.5px;
+  background: #BC7FCD;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer; /* 👈 Makes it look clickable */
+  transition: background-color 0.3s ease;
+}
+
+.button-div:hover {
+  background-color: #a763b2; /* 👈 Slightly darker on hover */
+}
+.fade-image {
+  width: 300px;
+  height: auto;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+.fade-out {
+  opacity: 0;
+}
