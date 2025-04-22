@@ -36,6 +36,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 5000); // Changes image every 5 seconds
   });
   
+  document.addEventListener("DOMContentLoaded", () => {
+    const track = document.getElementById("carouselTrack");
+    let position = 0;
+  
+    function slideImages() {
+      position -= 1; // move 1px to the left
+      if (Math.abs(position) >= track.scrollWidth / 2) {
+        position = 0; // reset position to loop
+      }
+      track.style.transform = `translateX(${position}px)`;
+      requestAnimationFrame(slideImages); // call again for smooth loop
+    }
+  
+    slideImages();
+  });
   
   
   
